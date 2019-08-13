@@ -75,8 +75,8 @@
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class=" smooth-menu active"></li>
 							<li class="smooth-menu"><a href="#about">about</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#skills">records</a></li>
+			                    <li class="smooth-menu"><a href="#experience">competition</a></li>
 			                    <li class="smooth-menu"><a href="#pictures">pictures</a></li>
 			                    <li class="smooth-menu"><a href="#clients">sponsors</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
@@ -463,7 +463,7 @@ Once at the Gracie Humaitá, Gabriel continued on the path of success, earning t
 		<!--experience start -->
 		<section id="experience" class="experience">
 			<div class="section-heading text-center">
-				<h2>experience</h2>
+				<h2>competition</h2>
 				<br>
 				<h3>Main Achievements:</h3>
 			</div>
@@ -946,41 +946,35 @@ Once at the Gracie Humaitá, Gabriel continued on the path of success, earning t
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
+										<div id="map"></div>
+									<script>
+										initMap = () => {
+										  const myLatLng = { lat: 32.6583733, lng: -117.1068789 };
+										  const map = new google.maps.Map(
+											document.getElementById("map"),
+											{
+											  zoom: 12,
+											  center: myLatLng
+											}
+										  );
+										  
+										  const image = 'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.graciehumaita.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fgracielogofavi144.png&f=1';
+										 
+										   marker = new google.maps.Marker({
+											position: myLatLng,
+											map: map,
+											title: "Gracie South Bay Jiu Jitsu",
+											animation: google.maps.Animation.DROP
+										  });    
+										};
+								
+									  </script>
+									   <script
+									   async
+									   defer
+									   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCON2ABSW6R1CghyccIM023hbVshvNPlSs
+					   &callback=initMap"
+									 ></script>
 								</div><!--/.contact-form-->
 							</div><!--/.single-contact-box-->
 						</div><!--/.col-->
@@ -994,11 +988,12 @@ Once at the Gracie Humaitá, Gabriel continued on the path of success, earning t
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
 											<h3>phone</h3>
-											<p>1 (619) 597-5171</p>
+											
+											<a href="tel:1 (619) 597-5171"><p>1 (619) 597-5171</p></a>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
-											<p>paulogabriel_no22@hotmail.com</p>
+											<a target="blank" href="mailto:paulogabriel_no22@hotmail.com" <p>paulogabriel_no22@hotmail.com</p></a>
 										</div>
 									</div>
 								</div><!--/.contact-adress-->
@@ -1023,7 +1018,7 @@ Once at the Gracie Humaitá, Gabriel continued on the path of success, earning t
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+						&copy; 2019 PAULO GABRIEL
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
