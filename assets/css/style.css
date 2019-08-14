@@ -162,7 +162,7 @@ nav.navbar.bootsnav .navbar-toggle i{color:blue;}
 --------------------------------------*/
 .welcome-hero{
     border:1px solid black;
-    border-radius:10px;
+    border-radius:8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,6 +173,7 @@ nav.navbar.bootsnav .navbar-toggle i{color:blue;}
     height:800px;
 }
 .welcome-hero:before{
+    border-radius:8px;
     position:absolute;
     content: " ";
     top:0;
@@ -188,7 +189,7 @@ nav.navbar.bootsnav .navbar-toggle i{color:blue;}
 
 /*.header-text-area*/
 .header-text h2 {
-    text-shadow: 0px 0px 3px white;
+    text-shadow: 0px 0px 2px white;
     color: #fff;
     font-size: 54px;
     font-weight: 700;
@@ -228,8 +229,8 @@ nav.navbar.bootsnav .navbar-toggle i{color:blue;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
-.about-content {padding-top: 100px;}
+.about {padding: 100px 0 50px;}
+.about-content {padding-top: 10px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
@@ -360,13 +361,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
-.skill-content{padding: 5px 0 8px;}
-.single-skill-content{padding-top: 50px;}
+.skill-content{padding: 95px 0 5px;}
+.single-skill-content{padding-top: 40px;}
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 50px;
+    padding-top: 50px;
     border-bottom: 1px solid #e5ebf2;
 }
 .single-progress-txt {
@@ -377,7 +379,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     width: 10%;
     color: blue;
     position: relative;
-    top: 6px;
+    top: 9px;
     left: 20px;
 }
 .barWrapper {
@@ -457,10 +459,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .main-timeline:before{
     content: "";
     width: 2px;
-    height: 90%;
+    height: 88%;
     background: #b2c1ce;
     position: absolute;
-    top: 1.5%;
+    top: 1.1%;
     left: 45.8%;
     z-index: -1;
 }
@@ -755,7 +757,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #636a82;
-    margin-left:60px;
+    margin-left:50px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
     -ms-transition:.3s; 
