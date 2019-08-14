@@ -630,6 +630,26 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1.1);
 }/*.item img*/
 
+iframe {
+    border: 1px solid black;
+    border-radius:10px;
+    margin:12px;
+   
+}
+
+
+iframe .ytp-title-expanded-overlay {
+    display: flex;
+    color:red;
+}
+iframe .ytp-title-channel-logo {
+    border-radius: 10%;
+    flex-shrink: 0;
+    margin: 5px;
+    border:none;
+}
+
+
 
 /*-------------------------------------
         10. Sponsors
