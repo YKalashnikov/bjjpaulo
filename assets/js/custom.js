@@ -114,7 +114,7 @@ $(document).ready(function(){
         });
 
         $(window).load(function(){
-        	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
+        	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'10'});
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
