@@ -82,13 +82,14 @@ html,body{
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
     background-color: rgb(255, 255, 255);
+    border:1px solid red;
     border: none;
     
     
 }
 
 nav.navbar.bootsnav {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
     
@@ -111,7 +112,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     font-weight: 400;
     text-transform:uppercase;
     -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; fa
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
@@ -128,7 +129,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e; text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.575); }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: blue;}
 /*.nav li*/
 
@@ -788,7 +789,7 @@ iframe .ytp-title-channel-logo {
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #636a82;
-    margin-left:55px;
+    padding-left:65px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
     -ms-transition:.3s; 
