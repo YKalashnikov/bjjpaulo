@@ -1,16 +1,5 @@
 $(document).ready(function(){
 	"use strict";
-    
-
-
-
-/*=========== TABLE OF CONTENTS ===========
-1. Scroll To Top 
-2. Smooth Scroll spy
-3. Progress-bar
-4. owl carousel
-5. welcome animation support
-======================================*/
 
     // 1. Scroll To Top 
 		$(window).on('scroll',function () {
@@ -109,14 +98,19 @@ $(document).ready(function(){
     // 5. welcome animation support
 
         $(window).load(function(){
+			$(".navbar-brand").removeClass("animated lightSpeedIn").css({'opacity':'0'});
         	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
             $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
         });
 
         $(window).load(function(){
         	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'10'});
-            $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
-        });
+			$(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
+			$(".navbar-brand").addClass("animated bounce").css({'opacity':'10'});
+			$(".smooth-menu").addClass("animated lightSpeedIn").css({'opacity':'10'});
+		});
+		
+	
 
 });	
 	
