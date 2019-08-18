@@ -100,7 +100,8 @@ $(document).ready(function(){
         $(window).load(function(){
 			$(".navbar-brand").removeClass("animated lightSpeedIn").css({'opacity':'0'});
         	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
-            $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
+			$(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
+			$(".navbar-toggle").removeClass("animated flash").css({'opacity':'10'});
         });
 
         $(window).load(function(){
@@ -108,6 +109,7 @@ $(document).ready(function(){
 			$(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
 			$(".navbar-brand").addClass("animated bounce").css({'opacity':'10'});
 			$(".smooth-menu").addClass("animated lightSpeedIn").css({'opacity':'10'});
+			$(".navbar-toggle").addClass("animated flash").css({'opacity':'10'});
 		});
 		
 	
